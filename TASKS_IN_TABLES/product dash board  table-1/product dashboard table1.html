@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Dashboard Table-1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: #19253c;
+            color: #d1e2f7;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 97%;
+            text-align: left;
+            margin: 25px;
+            margin-top: 35px;
+            background-color: #132344;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        th, td {
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            color: #667484;
+            border-collapse: collapse;
+            border: 1px solid rgb(55, 51, 51);
+        }
+
+        th {
+            background: #1f3256;
+            color: #667484;
+            font-weight: normal;
+        }
+        tr.month-row td {
+            background: #1f3256;;
+            color: #667484;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: left;
+            padding: 10px 15px;
+        }
+
+        .address-link {
+            color: #63a9f0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .status-finished {
+            color: #28a745;
+        }
+
+        .status-waiting {
+            color: #ffc107;
+        }
+
+        .status-eta {
+            color: #17a2b8;
+        }
+
+        .navbar-table {
+            background-color: #26385a;
+            border-bottom: 1px solid #334a6d;
+            margin: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .navbar-table th {
+            text-align: center;
+            padding: 15px 10px;
+            background: none;
+            border: none;
+            
+        }
+
+        .navbar-table a {
+            color: #d1e2f7;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .navbar-table a:hover {
+            color: rgb(9, 106, 225);
+        }
+
+        .navbar-header th {
+            background-color: #0593e6;
+            font-size: 18px;
+            text-align: left;
+            padding: 12px;
+            color: #fff;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .none-th {
+            background: #19253c;
+            border: none;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <table class="navbar-table">
+        <tr class="navbar-header">
+            <th colspan="10"><img src="logotable1.png" alt="not found"></th>
+        </tr>
+        <tr>
+            <th><a href="">DASHBOARD</a></th>
+            <th><a href="">USERS</a></th>
+            <th><a href="">PRIORITY</a></th>
+            <th><a href="">COLLECTIONS</a></th>
+            <th><a href="">ARCHIVED</a></th>
+            <th><a href="">DELETED</a></th>
+            <th><a href="">TRENDS</a></th>
+            <th><a href="">TASKS</a></th>
+            <th><a href="">FILTERS</a></th>
+            <th><a href="">STATS</a></th>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th class="none-th"></th>
+            <th>Customer</th>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Address</th>
+            <th>Revenue</th>
+            <th>VAT.</th>
+            <th>Total Price</th>
+            <th>Status</th>
+        </tr>
+        <tr class="month-row">
+            <td rowspan="5">March 2014</td>
+        </tr>
+        <tr>
+            <td>IBBP Apps</td>
+            <td>H&amp;R Real</td>
+            <td>Joshua O’</td>
+            <td>276 Tremont Street, Boston, MA 02116</td>
+            <td>$420,930</td>
+            <td>$12,834</td>
+            <td>$430,000</td>
+            <td class="status-finished">FINISHED</td>
+        </tr>
+        <tr>
+            <td>SRA - General Contacts</td>
+            <td>Great Wes</td>
+            <td>Eli Ahmad</td>
+            <td>1310 Mission Street, San Francisco, CA 94103</td>
+            <td>$312,840</td>
+            <td>$7,040</td>
+            <td>$320,000</td>
+            <td class="status-waiting">WAITING</td>
+        </tr>
+        <tr>
+            <td>CCST</td>
+            <td>Fording Fli</td>
+            <td>Dennis Vill</td>
+            <td>San Diego, CA 92138-1796</td>
+            <td>$112,483</td>
+            <td>$1,240</td>
+            <td>$120,000</td>
+            <td class="status-eta">ETA</td>
+        </tr>
+        <tr>
+            <td>Accupure</td>
+            <td>CC Imperi</td>
+            <td>Carlos Ric</td>
+            <td>1219-1223 Vine Street, Philadelphia, PA 19107</td>
+            <td>$640,742</td>
+            <td>$12,834</td>
+            <td>$652,000</td>
+            <td class="status-waiting">WAITING</td>
+        </tr>
+        <tr class="month-row">
+            <td rowspan="5">April 2014</td>
+        </tr>
+        <tr>
+            <td>IBBP Apps</td>
+            <td>Atco Ltd.</td>
+            <td>Mary Hica</td>
+            <td>4933 W. Craig Rd. Suite 291, Las Vegas, NV</td>
+            <td>$845,948</td>
+            <td>$83,932</td>
+            <td>$1,082,220</td>
+            <td class="status-finished">FINISHED</td>
+        </tr>
+        <tr>
+            <td>eDiscovery</td>
+            <td>Ensign Ene</td>
+            <td>Garry Lock</td>
+            <td>Arlington, VA 22204</td>
+            <td>$233,334</td>
+            <td>$4,983</td>
+            <td>$240,000</td>
+            <td class="status-waiting">WAITING</td>
+        </tr>
+        <tr>
+            <td>EI Tools</td>
+            <td>Fortis Inc</td>
+            <td>George Bu</td>
+            <td>1250 Weaver Street, San Diego, CA 92114</td>
+            <td>$473,843</td>
+            <td>$13,433</td>
+            <td>$480,000</td>
+            <td class="status-finished">FINISHED</td>
+        </tr>
+        <tr>
+            <td>Accupure</td>
+            <td>Manuliffe F</td>
+            <td>Manu Acu</td>
+            <td>
+                1072 Folsom Street, #470 San Francisco, CA<br>
+                94117-1080 USA, (415) 566-9777<br>
+            </td>
+            <td>$232,849</td>
+            <td>$9,000</td>
+            <td>$242,000</td>
+            <td class="status-finished">FINISHED</td>
+        </tr>
+        <tr class="month-row">
+            <td rowspan="5">May 2014</td>
+        </tr>
+        <tr>
+            <td>IBBP Apps</td>
+            <td>Great Wes</td>
+            <td>Eli Ahmad</td>
+            <td>1310 Mission Street, San Francisco, CA 94103</td>
+            <td>$112,840</td>
+            <td>$7,040</td>
+            <td>$120,000</td>
+            <td class="status-waiting">WAITING</td>
+        </tr>
+        <tr>
+            <td>eDiscovery</td>
+            <td>Fording Fli</td>
+            <td>Dennis Vill</td>
+            <td>San Diego, CA 92138-1796</td>
+            <td>$92,833</td>
+            <td>$4,983</td>
+            <td>$98,000</td>
+            <td class="status-waiting">WAITING</td>
+        </tr>
+        <tr>
+            <td>EI Tools</td>
+            <td>CC Imperi</td>
+            <td>Carlos Ric</td>
+            <td>1219-1223 Vine Street, Philadelphia, PA 19107</td>
+            <td>$840,742</td>
+            <td>$12,834</td>
+            <td>$1,240,390</td>
+            <td class="status-eta">ETA</td>
+        </tr>
+        <tr>
+            <td>Accupure</td>
+            <td>Atco Ltd.</td>
+            <td>Mary Hica</td>
+            <td>4933 W. Craig Rd. Suite 291, Las Vegas, NV</td>
+            <td>$845,948</td>
+            <td>$83,932</td>
+            <td>$1,082,220</td>
+            <td class="status-finished">FINISHED</td>
+        </tr>
+    </table>
+</body>
+</html>

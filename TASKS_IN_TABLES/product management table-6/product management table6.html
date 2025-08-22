@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Management Table-6</title>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #141c3a;
+        margin: 5px;
+        padding: 5px;
+        color: white;
+        text-align: center;
+    }
+
+    table {
+        width: 95%;
+        margin: 35px;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #151d48;
+        border: 2px solid #444;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    }
+
+    td, th {
+        padding: 9px;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    th {
+        color: #f1f1f1;
+        font-weight: bold;
+        padding: 14px;
+        font-size: 13.5px;
+    }
+
+    .table-header {
+        background-color: #0d1638;
+        text-align: center;
+
+    }
+
+    tr:nth-child(odd) {
+        background-color: #0d1638;
+    }
+
+    img {
+        width: 77px;
+        height: 55px;
+        border-radius: 2px;
+    }
+
+    .table-header h2 {
+        margin: 10px;
+        font-size: 19px;
+        text-align: left;
+        color: #fff;
+    }
+
+    .prod {
+        background: #28a745;
+        border: none;
+        color: white;
+        padding: 10px 12px;
+        margin: 40px;
+        margin-top: 10px;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .prod:hover {
+        background: #04e635;
+    }
+
+    .btnedit {
+        background: #0411c5;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        margin-right: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .btnedit:hover {
+        opacity: 0.8;
+    }
+
+    .btndelete {
+        background: #ef051d;
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .btndelete:hover {
+        opacity: 0.8;
+    }
+
+    .rating {
+        color: #ffcc00;
+        font-weight: bold;
+    }
+
+    .title {
+        color: #0b0be5;
+        font-weight: bold;
+    }
+
+    #search {
+        width: 300px;
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #05185e;;
+        margin-left: 855px;
+        background-color: #0d1638;;
+    }
+
+    p {
+        text-align: left;
+        font-size: 27px;
+
+    }
+</style>
+</head>
+<body>
+<p>Product- <b>Management</b></p>
+    <table>
+        <tr class="table-header">
+            <td colspan="7">
+                <h2>List of Products</h2>
+                <button class="prod">Create Product</button>
+                <input type="search" name="search" id="search" placeholder="Search...">
+            </td>
+        </tr>
+
+        <tr>
+            <th>ID</th>
+            <th>IMAGE</th>
+            <th>TITLE</th>
+            <th>SUBTITLE</th>
+            <th>PRICE($)</th>
+            <th>RATING</th>
+            <th>API</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td><img src="trainerstable6.png" alt=""></td>
+            <td class="title">Trainers</td>
+            <td>Trainers in White</td>
+            <td class="title">76</td>
+            <td class="rating">4.6 ⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td><img src="bootstable6.png" alt=""></td>
+            <td class="title">Boots</td>
+            <td>Trainers in Blue</td>
+            <td class="title">45</td>
+            <td class="rating">4.6 ⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td><img src="flatsandalstable6.png" alt=""></td>
+            <td class="title">Flat sandals</td>
+            <td>Trainers in White</td>
+            <td class="title">55</td>
+            <td class="rating">4.6⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td><img src="tariners_2table6.png" alt=""></td>
+            <td class="title">Trainers</td>
+            <td>Trainers in White</td>
+            <td class="title">76</td>
+            <td class="rating">4.6 ⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td><img src="boots_2table6.png" alt=""></td>
+            <td class="title">Boots</td>
+            <td>Trainers in Blue</td>
+            <td class="title">45</td>
+            <td class="rating">4.6 ⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td><img src="flatsandals_2table6.png" alt=""></td>
+            <td class="title">Flat sandals</td>
+            <td>Trainers in White</td>
+            <td class="title">55</td>
+            <td class="rating">4.6 ⭐</td>
+            <td>
+                <button class="btnedit">Edit</button>
+                <button class="btndelete">Delete</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
